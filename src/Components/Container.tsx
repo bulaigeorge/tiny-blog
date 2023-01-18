@@ -10,7 +10,7 @@ interface IBlogsProps {
 
 const Container = ({blogs}: IBlogsProps) => {
   return (
-    <div>
+    <div className='container'>
         {sections.map((s, index) => {
             const sectionBlogs = blogs.filter(b => b.tags.includes(s))
             return <Section blogPosts={sectionBlogs} section={s} key={index}/>

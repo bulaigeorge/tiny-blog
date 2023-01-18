@@ -9,8 +9,8 @@ interface ISectionProps {
 
 const Section = ({blogPosts, section}: ISectionProps) => {
   return (
-    <details>
-        <summary> {section} </summary>
+    <details className='blogs'>
+        <summary className='sectionName'> {section} </summary>
         {blogPosts.map(b => <Post blog={b} key={b.id}/> )}
     </details>
   )

@@ -20,7 +20,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Tiny Blog</h1>
+      <h1 className='title'>Tiny Blog</h1>
       <Container blogs={blogs} />
     </div>
   );
