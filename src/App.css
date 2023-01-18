@@ -7,6 +7,7 @@
 .App {
   background-color: gainsboro;
   min-height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
 }
@@ -34,4 +35,5 @@
   margin-bottom: 1rem;
   margin-left: 1rem;
   width: fit-content;
+  max-width: 93vw;
 }
