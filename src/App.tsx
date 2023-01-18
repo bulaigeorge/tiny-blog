@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
 import './App.css';
-import Post from './Components/Post';
+import Container from './Components/Container';
 import { BlogPost } from './types/types';
+
 
 function App() {
   const [blogs, setBlogs] = useState<Array<BlogPost>>([]);
@@ -20,9 +21,7 @@ function App() {
   return (
     <div className="App">
       <h1>Tiny Blog</h1>
-      <div>
-        {blogs.map(b => <Post blog={b} /> )}
-      </div>
+      <Container blogs={blogs} />
     </div>
   );
 }

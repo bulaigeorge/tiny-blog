@@ -1,4 +1,3 @@
-import React from 'react'
 import { BlogPost } from '../types/types'
 
 interface IBlogPostProps {
@@ -10,6 +9,10 @@ const Post = ({blog}: IBlogPostProps) => {
     <div>
         <h3> {blog.title} </h3>
         <p> {blog.body} </p>
+        <div>
+            {blog.tags.map((tag, index) => <label key={index}>#{tag}</label>)}
+            <p> Reactions: {blog.reactions} </p>
+        </div>
     </div>
   )
 }
