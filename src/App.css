@@ -2,6 +2,7 @@
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .App {
@@ -21,11 +22,15 @@
 
 .container {
   margin-left: 2rem;
+  margin-right: 1.5rem;
+  display: flex;
+  max-width: 98vw;
 }
 
 .sectionName {
   text-transform: capitalize;
   font-size: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .blogs {
@@ -34,6 +39,42 @@
   border-radius: 6px;
   margin-bottom: 1rem;
   margin-left: 1rem;
+  margin-right: 1rem;
+  min-width: 11vw;
   width: fit-content;
-  max-width: 93vw;
+  max-width: 83vw;
+  height: fit-content;
+}
+
+.post {
+  max-width: 20vw;
+  border: solid black 1px;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  background-color: gainsboro;
+}
+
+.post__title, .post__body {
+  margin-bottom: 0.7rem;
+}
+
+.magical {
+  background-color: rgb(213, 255, 255);
+}
+
+.love {
+  background-color: rgb(255, 190, 190);
+}
+
+.crime {
+  background-color: rgb(182, 157, 180);
+}
+
+.classic {
+  background-color: rgb(211, 250, 207);
+}
+
+.history {
+  background-color: rgb(255, 234, 195);
 }
