@@ -11,7 +11,7 @@ const Post = ({blog}: IBlogPostProps) => {
         <p className='post__body'> {blog.body} </p>
         <div>
             {blog.tags.map((tag, index) => <label key={index}>#{tag}</label>)}
-            <p> Reactions: {blog.reactions} </p>
+            <p className='reactions'> Reactions: {blog.reactions} </p>
         </div>
     </div>
   )

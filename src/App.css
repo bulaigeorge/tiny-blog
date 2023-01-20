@@ -78,3 +78,11 @@
 .history {
   background-color: rgb(255, 234, 195);
 }
+
+.reactions {
+  background-color: rgba(253, 192, 238, 0.767);
+  border-radius: 5px;
+  width: fit-content;
+  margin-left: 1px;
+  padding: 2px;
+}
